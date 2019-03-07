@@ -1,0 +1,50 @@
+.ui.inverted.vertical.segment {
+	height: 100vh;
+}
+.ui.inverted.vertical.segment h1.header.item {
+	font-size: 2em;
+}
+.ui.inverted.vertical.segment a.item {
+	font-size: 1.2em;
+}
+.ui.inverted.vertical.segment .ui.text.container {
+	/*height: 300px;
+	position: absolute;*/
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.ui.inverted.vertical.segment .ui.text.container h1.header {
+	font-size: 3em;
+}
+.ui.inverted.vertical.segment .ui.text.container p {
+	font-size: 1.6em;
+	line-height: 1.6;
+}
+
+.text {
+	font-size: 1.6em;
+	line-height: 1.6;
+	margin-top: 0;
+	margin: 0 0 1em;
+}
+.ui.inverted.vertical.segment .ui.footer.segment {
+	height: 80px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	font-size: 1.2em;
+	color: gray;
+}
+.ui.inverted.vertical.segment .ui.footer.segment a {
+	color: white;
+}
+.ui.progress .label {
+	color: white;
+}
+body {
+	background-attachment: fixed;
+	background-color: #1b1c1d;
+}
