@@ -40,6 +40,8 @@
 
 - Edit the configuration (replace all the domain.tld and check the php block if you are not using php-fpm7.3).
 
+`echo -e "Please type your (sub)domain"; read -r domain`
+`sed -i "s|domain.tld|$domain|" /etc/nginx/sites-enabled/server-landing.conf`
 `nano /etc/nginx/sites-enabled/server-landing.conf`
 
 - Reload nginx
