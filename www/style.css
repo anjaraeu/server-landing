@@ -8,8 +8,6 @@
 	font-size: 1.2em;
 }
 .ui.inverted.vertical.segment .ui.text.container {
-	/*height: 300px;
-	position: absolute;*/
 	top: 0;
 	bottom: 0;
 	left: 0;
