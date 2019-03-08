@@ -2,6 +2,7 @@
 
 ## Requirements
 
+- php-fpm (7.x)
 - php-cli (7.x)
 - composer
 - nginx
@@ -37,10 +38,15 @@
 
 `cp /opt/server-landing/nginx/server-landing.conf /etc/nginx/sites-enabled/`
 
-- Edit the configuration.
+- Edit the configuration (replace all the domain.tld and check the php block if you are not using php-fpm7.3).
 
 `nano /etc/nginx/sites-enabled/server-landing.conf`
 
 - Reload nginx
 
 `nginx -s reload`
+
+- (optional) Add a gif.
+
+If your server hostname is `srv-app-1` for exemple, your gif name must be `srv-app-1.gif`.
+Put your gif file in `/opt/server-landing/www/`.
