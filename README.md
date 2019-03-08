@@ -16,7 +16,7 @@
 
 - Install composer requirements
 
-`cd socket-server; composer install`
+`cd /opt/server-landing/socket-server; composer install`
 
 - Link the systemd service of the server-socket app.
 

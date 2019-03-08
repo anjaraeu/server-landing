@@ -2,7 +2,7 @@
 Description=Socket Server for Status Page
 
 [Service]
-WorkingDirectory=/srv/socket-server
+WorkingDirectory=/opt/server-landing/socket-server
 ExecStart=/usr/bin/php server.php
 Type=simple
 Restart=always
