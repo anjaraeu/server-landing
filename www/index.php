@@ -1,3 +1,13 @@
+<?php 
+	$fh = fopen('/proc/meminfo','r');
+	while ($line = fgets($fh)) {
+		$pieces = array();
+		if (preg_match('/^SwapTotal:\s+(\d+)\skB$/', $line, $pieces)) {
+			$totalswap = $pieces[1];
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -18,8 +28,8 @@
 				<h1 class="ui inverted header">Welcome here!</h1>
 				<div class="text">Load average: <span id="avg"></span></div>
 				<div class="text"><div class="ui orange progress" id="ram"><div class="bar"></div><div class="label">RAM Usage</div></div></div>
-				<div class="text"><div class="ui green progress" id="swap"><div class="bar"></div><div class="label">Swap Usage</div></div></div>
-				<div class="text"><div class="ui red progress" id="du"><div class="bar"></div><div class="label">Disk Usage</div></div></div>
+				<?php if($totalswap =! 0) : ?><div class="text"><div class="ui green progress" id="swap"><div class="bar"></div><div class="label">Swap Usage</div></div></div><?php endif; ?>
+				<div class="text"><div class="ui red progress" id="du"><div class="bar"></div><div class="label">Disk Usage on /</div></div></div>
 			</div>
 		</div>
 		<script src="script.js"></script>
