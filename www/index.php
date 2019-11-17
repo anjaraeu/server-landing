@@ -28,7 +28,7 @@
 				<h1 class="ui inverted header">Welcome here!</h1>
 				<div class="text">Load average: <span id="avg"></span></div>
 				<div class="text"><div class="ui orange progress" id="ram"><div class="bar"></div><div class="label">RAM Usage</div></div></div>
-				<?php if($totalswap =! 0) : ?><div class="text"><div class="ui green progress" id="swap"><div class="bar"></div><div class="label">Swap Usage</div></div></div><?php endif; ?>
+				<?php if($totalswap =! 0) {?><div class="text"><div class="ui green progress" id="swap"><div class="bar"></div><div class="label">Swap Usage</div></div></div><?php }?>
 				<div class="text"><div class="ui red progress" id="du"><div class="bar"></div><div class="label">Disk Usage on /</div></div></div>
 			</div>
 		</div>
